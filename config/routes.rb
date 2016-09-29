@@ -1,6 +1,7 @@
 Rails.application.routes.draw do
   resources :trips, except: [:new, :edit]
   resources :trips, except: [:new, :edit]
+  resources :trips, except: [:new, :edit]
   resources :types, except: [:new, :edit]
   resources :seasons, except: [:new, :edit]
   resources :trips, except: [:new, :edit]

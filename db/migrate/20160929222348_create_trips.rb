@@ -13,9 +13,8 @@ class CreateTrips < ActiveRecord::Migration
       t.boolean :winter
       t.boolean :artsy
       t.boolean :boozy
-      t.boolean :foody
+      t.boolean :foodie
       t.boolean :outdoorsy
-      t.boolean :sporty
 
       t.timestamps null: false
     end
