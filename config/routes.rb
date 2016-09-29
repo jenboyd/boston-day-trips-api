@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  resources :comments, except: [:new, :edit]
   resources :trips, except: [:new, :edit]
   resources :trips, except: [:new, :edit]
   resources :trips, except: [:new, :edit]
