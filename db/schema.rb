@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20160327214720) do
+ActiveRecord::Schema.define(version: 20160929214106) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -24,6 +24,26 @@ ActiveRecord::Schema.define(version: 20160327214720) do
   end
 
   add_index "examples", ["user_id"], name: "index_examples_on_user_id", using: :btree
+
+  create_table "trips", force: :cascade do |t|
+    t.string   "name"
+    t.string   "location"
+    t.string   "description"
+    t.string   "photo"
+    t.string   "url"
+    t.integer  "dist_from_bos"
+    t.boolean  "spring"
+    t.boolean  "summer"
+    t.boolean  "fall"
+    t.boolean  "winter"
+    t.boolean  "artsy"
+    t.boolean  "boozy"
+    t.boolean  "foody"
+    t.boolean  "outdoorsy"
+    t.boolean  "sporty"
+    t.datetime "created_at",    null: false
+    t.datetime "updated_at",    null: false
+  end
 
   create_table "users", force: :cascade do |t|
     t.string   "email",           null: false
