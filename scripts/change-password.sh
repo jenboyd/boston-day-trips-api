@@ -1,11 +1,11 @@
 #!/bin/bash
 
-curl --include --request PATCH http://localhost:3000/change-password/$ID \
-  --header "Authorization: Token token=$TOKEN" \
+curl --include --request PATCH https://boston-day-trips.herokuapp.com/change-password/1 \
+  --header "Authorization: Token token=BAhJIiU1ZjM2ZWQ4YmI1YjVmZjNmYTM4OTBlOTllOTk4OTQyMgY6BkVG--47d22d09339d24bf9ee4fd4f6e526027d78c87e4" \
   --header "Content-Type: application/json" \
   --data '{
     "passwords": {
-      "old": "an example password",
-      "new": "super sekrit"
+      "old": "123",
+      "new": "321"
     }
   }'
