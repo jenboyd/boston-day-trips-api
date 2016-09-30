@@ -23,7 +23,7 @@ class TripsController < ApplicationController
     if @trip.save
       render json: @trip, status: :created, location: @trip
     else
-      render json: status: :unprocessable_entity
+      render json: @trip.errors, status: :unprocessable_entity
     end
   end
 
