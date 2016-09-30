@@ -1,11 +1,11 @@
 #!/bin/bash
 
 curl --include --request PATCH https://boston-day-trips.herokuapp.com/change-password/1 \
-  --header "Authorization: Token token=BAhJIiU1ZjM2ZWQ4YmI1YjVmZjNmYTM4OTBlOTllOTk4OTQyMgY6BkVG--47d22d09339d24bf9ee4fd4f6e526027d78c87e4" \
+  --header "Authorization: Token token=BAhJIiUwOWFlZDM1N2U3NTkzYzdiMzBlOGRhZWE2YjI2YmYyOQY6BkVG--805cbbb1ef287f7cb69b36bcc965b2e9e4f1b11f" \
   --header "Content-Type: application/json" \
   --data '{
     "passwords": {
-      "old": "123",
-      "new": "321"
+      "old": "321",
+      "new": "123"
     }
   }'
