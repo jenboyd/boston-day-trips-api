@@ -1,4 +1,4 @@
-class CommentsController < ApplicationController
+class CommentsController < OpenReadController
   before_action :set_comment, only: [:show, :update, :destroy]
 
   # GET /comments
@@ -18,19 +18,20 @@ class CommentsController < ApplicationController
   # POST /comments
   # POST /comments.json
   def create
-    @comment = Comment.new(comment_params)
+    # @comment = Comment.new(comment_params)
+    @comment = current_user.comments.build(comment_params)
 
-    if @comment.save
-      render json: @comment, status: :created, location: @comment
-    else
-      render json: @comment.errors, status: :unprocessable_entity
-    end
+      if @comment.save
+        render json: @comment, status: :created, location: @comment
+      else
+        render json: @comment.errors, status: :unprocessable_entity
+      end
   end
 
   # PATCH/PUT /comments/1
   # PATCH/PUT /comments/1.json
   def update
-    @comment = Comment.find(params[:id])
+    @comment = current_user.comments.find(params[:id])
 
     if @comment.update(comment_params)
       head :no_content
@@ -42,6 +43,8 @@ class CommentsController < ApplicationController
   # DELETE /comments/1
   # DELETE /comments/1.json
   def destroy
+    @comment = current_user.comments.find(params[:id])
+
     @comment.destroy
 
     head :no_content
