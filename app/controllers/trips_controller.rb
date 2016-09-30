@@ -17,35 +17,35 @@ class TripsController < ApplicationController
 
   # POST /trips
   # POST /trips.json
-  def create
-    @trip = Trip.new(trip_params)
-
-    if @trip.save
-      render json: @trip, status: :created, location: @trip
-    else
-      render json: @trip.errors, status: :unprocessable_entity
-    end
-  end
+  # def create
+    # @trip = Trip.new(trip_params)
+    #
+    # if @trip.save
+    #   render json: @trip, status: :created, location: @trip
+    # else
+    #   render json: status: :unprocessable_entity
+    # end
+  # end
 
   # PATCH/PUT /trips/1
   # PATCH/PUT /trips/1.json
-  def update
-    @trip = Trip.find(params[:id])
-
-    if @trip.update(trip_params)
-      head :no_content
-    else
-      render json: @trip.errors, status: :unprocessable_entity
-    end
-  end
+  # def update
+    # @trip = Trip.find(params[:id])
+    #
+    # if @trip.update(trip_params)
+    #   head :no_content
+    # else
+      # render json: @trip.errors, status: :unprocessable_entity
+    # end
+  # end
 
   # DELETE /trips/1
   # DELETE /trips/1.json
-  def destroy
-    @trip.destroy
+  # def destroy
+    # @trip.destroy
 
-    head :no_content
-  end
+    # head :no_content
+  # end
 
   private
 

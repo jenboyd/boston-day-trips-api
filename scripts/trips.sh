@@ -24,7 +24,7 @@ curl --include --request POST http://localhost:3000/trips \
       "artsy" : "",
       "boozy" : "",
       "foodie" : "",
-      "outdoorsy" : "",
+      "outdoorsy" : ""
     }
   }'
 
