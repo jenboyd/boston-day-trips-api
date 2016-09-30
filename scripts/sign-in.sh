@@ -5,6 +5,6 @@ curl --include --request POST https://boston-day-trips.herokuapp.com/sign-in \
   --data '{
     "credentials": {
       "email": "1@example.com",
-      "password": "123"
+      "password": "321"
     }
   }'

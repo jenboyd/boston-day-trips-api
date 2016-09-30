@@ -19,7 +19,7 @@ class TripsController < ApplicationController
   # POST /trips.json
   def create
     @trip = Trip.new(trip_params)
-    
+
     if @trip.save
       render json: @trip, status: :created, location: @trip
     else
