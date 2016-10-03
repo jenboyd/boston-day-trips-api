@@ -41,7 +41,7 @@ module BostonDayTrips
     # Cross-Origin Resource Sharing
     config.middleware.use Rack::Cors do
       allow do
-        origins ENV['https://jenboyd.github.io/boston-day-trips-client/'] || 'http://localhost:8080'
+        origins ENV['CLIENT_ORIGIN'] || 'https://jenboyd.github.io/' 
         resource '*',
                  headers: :any,
                  methods: [:options, :get,
