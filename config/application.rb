@@ -42,7 +42,7 @@ module BostonDayTrips
     config.middleware.use Rack::Cors do
       allow do
         # origins ENV['CLIENT_ORIGIN'] || 'https://jenboyd.github.io/'
-        origins ENV['CLIENT_ORIGIN'] || 'http://localhost:8080'
+        origins ENV['CLIENT_ORIGIN'] || 'https://jenboyd.github.io'
 
         resource '*',
                  headers: :any,
