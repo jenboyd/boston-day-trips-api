@@ -28,5 +28,5 @@ curl --include --request POST https://boston-day-trips.herokuapp.com/trips \
     }'
 
     #destroy
-    curl --include --request DELETE https://boston-day-trips.herokuapp.com/trips/2 \
-    --header "Authorization: Token token=BAhJIiUwOWFlZDM1N2U3NTkzYzdiMzBlOGRhZWE2YjI2YmYyOQY6BkVG--805cbbb1ef287f7cb69b36bcc965b2e9e4f1b11f"
+    curl --include --request DELETE https://boston-day-trips.herokuapp.com/trips/1 \
+    --header "Authorization: Token token=BAhJIiU3MGFlZDJmYTExNGUwMmQ5ZmQwZTFhN2Y3YzE0ODdlMAY6BkVG--251478f518fd25060f17e978da67a34308338fb1"
