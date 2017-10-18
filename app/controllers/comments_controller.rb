@@ -15,6 +15,11 @@ class CommentsController < OpenReadController
     render json: @comment
   end
 
+  def show
+    render json: @comment
+  end
+
+
   # POST /comments
   # POST /comments.json
   def create

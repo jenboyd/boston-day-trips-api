@@ -4,7 +4,9 @@ class TripsController < ApplicationController
   # GET /trips
   # GET /trips.json
   def index
-    @trips = Trip.all
+    # @trips = Trip.all
+    @trips = Trip.where(trip_params)
+
     render json: @trips
   end
 
@@ -18,5 +20,9 @@ class TripsController < ApplicationController
 
   def set_trip
     @trip = Trip.find(params[:id])
+  end
+
+  def trip_params
+    params.permit(:dist_from_bos, :spring, :summer, :fall, :winter, :artsy, :boozy, :foodie, :outdoorsy)
   end
 end

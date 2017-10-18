@@ -15,7 +15,7 @@ Trip.create([
                 photo: 'http://i349.photobucket.com/albums/q362/jenlboyd/Boston%20Day%20Trips/crane-beach-small_zpsh27zogqu.jpg',
                 summer: true,
                 outdoorsy: true,
-                dist_from_bos: 60 },
+                dist_from_bos: 1 },
 
               { name: 'Glendale Falls',
                 location: 'Middlefield, Massachusetts',
@@ -25,7 +25,7 @@ Trip.create([
                 summer: true,
                 fall: true,
                 outdoorsy: true,
-                dist_from_bos: 135 },
+                dist_from_bos: 2 },
 
               { name: 'Westport Rivers Vineyards',
                 location: 'Westport, Massachusetts',
@@ -36,7 +36,7 @@ Trip.create([
                 fall: true,
                 boozy: true,
                 outdoorsy: true,
-                dist_from_bos: 70 },
+                dist_from_bos: 1.5 },
 
               { name: 'Tree House Brewing Co.',
                 location: 'Monson, Massachusetts',
@@ -47,7 +47,7 @@ Trip.create([
                 fall: true,
                 boozy: true,
                 outdoorsy: true,
-                dist_from_bos: 80 },
+                dist_from_bos: 1.5 },
 
               { name: 'The Town of Salem',
                 location: 'Salem, Massachusetts',
@@ -58,7 +58,7 @@ Trip.create([
                 fall: true,
                 winter: true,
                 artsy: true,
-                dist_from_bos: 40 },
+                dist_from_bos: 1 },
 
               { name: 'Mohegan Bluffs',
                 location: 'Block Island, Rhode Island',
@@ -66,5 +66,5 @@ Trip.create([
                 photo: 'http://i349.photobucket.com/albums/q362/jenlboyd/Boston%20Day%20Trips/mohegan-small_zpsvpqmtobc.jpg?t=1475543788',
                 summer: true,
                 outdoorsy: true,
-                dist_from_bos: 60 }
+                dist_from_bos: 1 }
             ])
